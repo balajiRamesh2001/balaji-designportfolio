@@ -54,59 +54,64 @@ export function Contact() {
           </a>
         </div> */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 px-4 sm:px-0 max-w-5xl mx-auto">
-          <a
-            href="mailto:balajiramesh.desiger@gmail.com"
-            className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
-          >
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              Email
-            </p>
-            <p className="mt-2 text-sm break-words whitespace-normal">
-              balajiramesh.desiger@gmail.com ↗
-            </p>
-          </a>
+        <div className="space-y-4 pt-4 max-w-3xl mx-auto w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 sm:px-0">
+            <a
+              href="mailto:balajiramesh.desiger@gmail.com"
+              className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
+            >
+              <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                Email
+              </p>
+              <p className="mt-2 text-sm break-words whitespace-nowrap">
+                balajiramesh.desiger@gmail.com ↗
+              </p>
+            </a>
 
-          <a
-            href="tel:+918056228651"
-            className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
-          >
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              Contact
-            </p>
-            <p className="mt-2 text-sm">
-              +91 8056228651
-            </p>
-          </a>
+            <a
+              href="tel:+918056228651"
+              className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
+            >
+              <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                Contact
+              </p>
+              <p className="mt-2 text-sm whitespace-nowrap">
+                +91 8056228651
+              </p>
+            </a>
+          </div>
 
-          <a
-            href="https://www.linkedin.com/in/balajiramesh2908/"
-            target="_blank"
-            rel="noreferrer"
-            className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
-          >
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              LinkedIn
-            </p>
-            <p className="mt-2 text-sm">
-              /in/balajiramesh2908 ↗
-            </p>
-          </a>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 sm:px-0">
+            <a
+              href="https://www.linkedin.com/in/balajiramesh2908/"
+              target="_blank"
+              rel="noreferrer"
+              className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
+            >
+              <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                LinkedIn
+              </p>
+              <p className="mt-2 text-sm whitespace-nowrap">
+                /in/balajiramesh2908 ↗
+              </p>
+            </a>
 
-          <a
-            href="https://www.behance.net/balajiramesh1"
-            target="_blank"
-            rel="noreferrer"
-            className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
-          >
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              Behance
-            </p>
-            <p className="mt-2 text-sm">
-              /balajiramesh1 ↗
-            </p>
-          </a>
+            <a
+              href="https://www.behance.net/balajiramesh1"
+              target="_blank"
+              rel="noreferrer"
+              className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
+            >
+              <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                Behance
+              </p>
+              <p className="mt-2 text-sm whitespace-nowrap">
+                /balajiramesh1 ↗
+              </p>
+            </a>
+          </div>
         </div>
+
 
         <div className="pt-4">
           <a
