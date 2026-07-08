@@ -25,7 +25,7 @@ export type Project = {
   decisions: string[];
   learnings: string;
 
-  metrics: { label: string; value: string }[];
+  metrics?: { label: string; value: string }[];
 };
 
 export const projects: Project[] = [
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: "Collection Platform",
     type: "SaaS · Web + Mobile",
     tagline: "A Collection Management Platform that helps recovery agents prioritize accounts, streamline follow-ups, and improve collection efficiency without increasing operational workload.",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     year: "2026",
     liveUrl: "https://www.rupenet.com/finx-collecti",
     secondaryUrl: {
@@ -63,18 +63,18 @@ export const projects: Project[] = [
     ],
     learnings:
       "The project reinforced that collection teams value clarity and prioritization more than feature complexity. By reducing cognitive load and surfacing the most important borrower accounts at the right time, agents were able to make faster decisions and maintain more consistent recovery workflows.The biggest impact came from simplifying task prioritization rather than introducing additional functionality.",
-    metrics: [
-      { label: "Recovery Efficiency", value: "+35%" },
-      { label: "Agent Productivity", value: "+22%" },
-      { label: "Follow-up Delays", value: "−18%" },
-    ],
+    // metrics: [
+    //   { label: "Recovery Efficiency", value: "+35%" },
+    //   { label: "Agent Productivity", value: "+22%" },
+    //   { label: "Follow-up Delays", value: "−18%" },
+    // ],
   },
   {
     slug: "rupenet",
     title: "Fintech Website",
     type: "FINTECH • WEBSITE • LANDING PAGE",
     tagline: "A conversion-focused website designed to communicate financial products, build trust, and generate qualified business inquiries for a fintech platform.",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     year: "2026",
     liveUrl: "https://www.rupenet.com/",
     image: rupenetImg,
@@ -100,8 +100,8 @@ export const projects: Project[] = [
     learnings:
       "Designing for fintech audiences requires balancing credibility, clarity, and conversion. Users make decisions quickly based on trust signals, product understanding, and perceived business value.The project demonstrated that simplifying complex service offerings and prioritizing customer outcomes creates a stronger user experience than presenting extensive technical information.",
     metrics: [
-      { label: "User Engagement", value: "+32%" },
-      { label: "Qualified Enquiries", value: "+58%" },
+      { label: "User Engagement", value: "+15%" },
+      { label: "Qualified Enquiries", value: "+22%" },
       { label: "Value Proposition Clarity", value: "<8s" },
     ],
   },
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     title: "Corporate IT Website",
     type: "ENTERPRISE • WEBSITE • LANDING PAGE",
     tagline: "A trust-focused corporate website designed to communicate enterprise capabilities, showcase expertise, and generate qualified business enquiries.",
-    role: "Senior UI/UX Designe",
+    role: "UI/UX Designer",
     year: "2024",
     liveUrl: "https://www.smartworkitservices.com/services",
     image: switsImg,
@@ -136,17 +136,17 @@ export const projects: Project[] = [
     learnings:
       "Enterprise audiences prioritize clarity, credibility, and business outcomes over visual complexity. Simplifying service communication and strengthening trust signals had a greater impact on engagement than adding additional content or design elements.The project reinforced the importance of presenting expertise through clear messaging, structured information architecture, and user- focused storytelling.",
     metrics: [
-      { label: "Inbound leads", value: "+47%" },
+      { label: "Inbound leads", value: "+20%" },
       { label: "Average Session Duration", value: "+1m 12s" },
       { label: "Pages Per visit", value: "2.4×" },
     ],
   },
   {
     slug: "payrupe",
-    title: "Fintech Mobile App",
+    title: "Enterprise Fintech App",
     type: "FINTECH • MOBILE APP REDESIGN • UX IMPROVEMENT",
     tagline: "A user-centered redesign focused on simplifying financial transactions, improving task efficiency, and enhancing the overall experience for retail agents.",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     year: "2026",
     liveUrl: "https://www.rupenet.com/payrupe",
     secondaryUrl: {
@@ -176,9 +176,9 @@ export const projects: Project[] = [
     learnings:
       "The redesign demonstrated that efficiency is often more valuable than additional functionality in transaction-heavy financial applications. Agents prioritize speed, familiarity, and clarity when performing daily operations.By simplifying navigation, surfacing high- priority actions, and reducing unnecessary interaction steps, the application became easier to use without disrupting established user habits.",
     metrics: [
-      { label: "User engagement", value: "+40%" },
-      { label: "Session Efficiency", value: "+30%" },
-      { label: "User friction", value: "−25%" },
+      { label: "User engagement", value: "+30%" },
+      { label: "Session Efficiency", value: "+20%" },
+      { label: "User friction", value: "−15%" },
     ],
   },
   {
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     title: "Digital Payments Mobile App",
     type: "FINTECH • MOBILE APP • DIGITAL PAYMENTS",
     tagline: "A consumer fintech application designed for money transfers, bill payments, wallet services, and everyday digital transactions. ",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     year: "2026",
     liveUrl: "https://www.rupenet.com/finx",
     secondaryUrl: {
@@ -215,18 +215,18 @@ export const projects: Project[] = [
     ],
     learnings:
       "Consumer fintech users prioritize speed, familiarity, and confidence when performing financial transactions. Simplifying navigation and surfacing the most relevant actions had a greater impact on usability than introducing additional features. The project reinforced the importance of reducing friction around everyday financial tasks while maintaining visibility of the broader product ecosystem.",
-    metrics: [
-      { label: "User Engagement", value: "+45%" },
-      { label: "User Retention", value: "+35%" },
-      { label: "Feature Discoverability", value: "+50%" },
-    ],
+    // metrics: [
+    //   { label: "User Engagement", value: "+45%" },
+    //   { label: "User Retention", value: "+35%" },
+    //   { label: "Feature Discoverability", value: "+50%" },
+    // ],
   },
   {
     slug: "finx-gold",
     title: "Digi Gold Investment Platform",
     type: "Investing • GoldSaving • Web & Mobile",
     tagline: "A fintech platform that connects gold merchants and customers through digital gold savings and purchasing experiences.",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     year: "2026",
     liveUrl: "https://play.google.com/store/apps/details?id=com.rupenet.finx_gold&hl=en_IN",
     secondaryUrl: {
@@ -255,11 +255,11 @@ export const projects: Project[] = [
     ],
     learnings:
       "Trust plays a critical role in financial and investment products. Users are more likely to invest when ownership, security, pricing, and redemption processes are clearly communicated throughout the experience.The project demonstrated that transparency and simplicity have a greater impact on investment adoption than adding advanced financial features.Building confidence at every stage of the journey was key to increasing user participation and long- term engagement.",
-    metrics: [
-    { label: "User Engagement", value: "+55%" },
-    { label: "Task Completion", value: "+32%" },
-    { label: "Investment Conversion", value: "+28%" },
-  ],
+  //   metrics: [
+  //   { label: "User Engagement", value: "+55%" },
+  //   { label: "Task Completion", value: "+32%" },
+  //   { label: "Investment Conversion", value: "+28%" },
+  // ],
   },
 ];
 

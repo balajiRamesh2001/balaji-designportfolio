@@ -64,14 +64,14 @@ export function WorkGrid() {
                       {p.tagline}
                     </p>
                   </div>
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     {p.metrics.slice(0, 2).map((m) => (
                       <span key={m.label} className="text-xs px-3 py-1.5 rounded-full glass">
                         <span className="text-primary font-medium">{m.value}</span>{" "}
                         <span className="text-muted-foreground">{m.label.toLowerCase()}</span>
                       </span>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
                 <div className="absolute top-4 right-4 size-10 rounded-full glass flex items-center justify-center transition group-hover:bg-primary group-hover:text-primary-foreground">
                   <span aria-hidden>↗</span>
