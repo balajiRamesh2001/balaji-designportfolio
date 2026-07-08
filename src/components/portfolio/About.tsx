@@ -24,10 +24,10 @@ export function About() {
             I design products where <span className="text-gradient">trust, clarity, and usability</span> matter most.
           </h2>
           <p className="text-[17px] text-muted-foreground leading-relaxed">
-            My journey into product design began with an engineering background and evolved through graphic design, mobile apps, fintech products, and enterprise software. Over the last 3+ years, I've designed experiences across fintech, SaaS, ATS, HRMS, CRM, and payment platforms.
+            With over 3 years of experience, I design digital products that simplify complex workflows across fintech and enterprise SaaS. My work spans KYC & merchant onboarding, payment systems, ATS, HRMS, CRM and admin dashboards, helping businesses deliver intuitive, scalable and user-focused experiences.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I focus on understanding user problems before designing solutions, combining UX research, user flows, prototyping, and design systems to create intuitive, scalable experiences.
+           I enjoy solving complex product challenges through user research, interaction design, rapid prototyping and design systems while collaborating closely with product managers, developers and stakeholders from discovery to delivery
           </p>
           {/* <div className="grid sm:grid-cols-3 gap-4 pt-6">
             {[

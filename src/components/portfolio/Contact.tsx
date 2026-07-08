@@ -11,7 +11,7 @@ export function Contact() {
           Let's create <span className="text-gradient">products users love</span>.
         </h2>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-          I'm open to senior UI/UX design roles and selective freelance in fintech, SaaS and
+          I'm open to UI/UX design roles and selective freelance in fintech, SaaS and
           enterprise platforms. Quick reply guaranteed.
         </p>
 

@@ -113,7 +113,7 @@ function CaseStudy() {
         </section>
 
         <section className="mt-16 grid md:grid-cols-3 gap-px rounded-3xl overflow-hidden glass">
-          {p.metrics.map((m) => (
+          {p.metrics?.map((m) => (
             <div key={m.label} className="p-8 bg-background/40 text-center">
               <p className="font-display text-4xl md:text-5xl text-gradient">{m.value}</p>
               <p className="text-xs uppercase tracking-widest text-muted-foreground mt-2">

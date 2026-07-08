@@ -14,7 +14,7 @@ type Project = {
   image: string;
   overview: string;
   challenge: string;
-  metrics: { label: string; value: string }[];
+  metrics?: { label: string; value: string }[];
   beforeAfter?: boolean;
 };
 
@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     title: "Rupenet",
     tag: "Fintech • Landing",
-    role: "Lead UI/UX Designer",
+    role: "UI/UX Designer",
     href: "https://www.rupenet.com/",
     image: rupenetImg,
     overview:
@@ -49,16 +49,16 @@ const projects: Project[] = [
       "Finx Collecti is a Collection Management Platform built for financial institutions, lending companies, and recovery teams. The platform provides a complete ecosystem consisting of an Agent Mobile Application, Supervisor Dashboard, and Borrower Management Portal.The product helps organizations manage collection activities, track repayments, prioritize high-risk accounts, monitor recovery performance, and improve operational efficiency through data-driven workflows.",
     challenge:
       "Surface high-signal accounts inside dense data without losing the agent's daily rhythm.",
-    metrics: [
-      { label: "Recovery speed", value: "+35%" },
-      { label: "Agent tasks/day", value: "+22%" },
-      { label: "Dispute rate", value: "−18%" },
-    ],
+    // metrics: [
+    //   { label: "Recovery speed", value: "+35%" },
+    //   { label: "Agent tasks/day", value: "+22%" },
+    //   { label: "Dispute rate", value: "−18%" },
+    // ],
   },
   {
     title: "SWITS Digital",
     tag: "Enterprise · Landing",
-    role: "Lead UI/UX Designer",
+    role: "UI/UX Designer",
     href: "https://www.smartworkitservices.com/services",
     image: switsImg,
     overview:
@@ -74,7 +74,7 @@ const projects: Project[] = [
   {
     title: "Payrupe",
     tag: "Fintech • App + Web",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     href: "https://www.rupenet.com/payrupe",
     secondaryHref: {
       label: "Google Play",
@@ -95,7 +95,7 @@ const projects: Project[] = [
   {
     title: "FINX",
     tag: "Wallet • App • Web",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     href: "https://www.rupenet.com/finx",
     secondaryHref: {
       label: "Google Play",
@@ -199,7 +199,7 @@ export function Work() {
                 <p className="text-muted-foreground text-sm leading-relaxed border-l-2 border-primary/60 pl-4">
                   <span className="text-foreground font-medium">Challenge.</span> {p.challenge}
                 </p>
-                <dl className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
+                {/* <dl className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
                   {p.metrics.map((m) => (
                     <div key={m.label}>
                       <dt className="text-[10px] uppercase tracking-widest text-muted-foreground">
@@ -208,7 +208,7 @@ export function Work() {
                       <dd className="font-display text-2xl text-primary mt-1">{m.value}</dd>
                     </div>
                   ))}
-                </dl>
+                </dl> */}
                 {p.secondaryHref && (
                   <a
                     href={p.secondaryHref.href}

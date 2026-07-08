@@ -47,7 +47,7 @@ export function Hero() {
             Designing products that <span className="text-gradient">scale businesses</span> and delight users.
           </h1>
           <p className="text-base md:text-lg text-muted-foreground mt-6 max-w-2xl mx-auto leading-relaxed">
-            Iam Balaji Senior UI/UX Designer with 3+ years of experience crafting fintech, SaaS, and mobile products that simplify complex user journeys and drive business growth.
+            Iam Balaji UI/UX Designer with 3+ years of experience crafting fintech, SaaS, and mobile products that simplify complex user journeys and drive business growth.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-8">
             <a href="#work"

@@ -16,7 +16,7 @@ type Project = {
   image: string;
   overview: string;
   challenge: string;
-  metrics: { label: string; value: string }[];
+  metrics?: { label: string; value: string }[];
   beforeAfter?: boolean;
 };
 
@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     title: "Application Tracking System",
     tag: "Webapp",
-    role: "Lead UI/UX Designer",
+    role: "UI/UX Designer",
     href: "https://www.behance.net/gallery/237968849/Application-Tracking-System-UI-UX-Design",
     image: atsImg,
     overview:
@@ -60,7 +60,7 @@ const projects: Project[] = [
   {
     title: "Freelancer Discovery Platform",
     tag: "Website",
-    role: "Lead UI/UX Designer",
+    role: "UI/UX Designer",
     href: "https://www.behance.net/gallery/237415277/ConnectUp-Discover-Freelancers-Web-UI-Design",
     image: freelanceImg,
     overview:
@@ -76,7 +76,7 @@ const projects: Project[] = [
   {
     title: "Netflix Redesign",
     tag: "Mobile app",
-    role: "Senior UI/UX Designer",
+    role: "UI/UX Designer",
     href: "https://www.behance.net/gallery/203371717/Netflix-Redesign",
     image: netflixImg,
     overview:
