@@ -64,7 +64,7 @@ export function Contact() {
                 Email
               </p>
               <p className="mt-2 text-sm break-words whitespace-nowrap">
-                balajiramesh.desiger@gmail.com ↗
+                balajiramesh.designer@gmail.com ↗
               </p>
             </a>
 
