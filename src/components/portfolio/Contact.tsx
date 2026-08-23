@@ -57,7 +57,7 @@ export function Contact() {
         <div className="space-y-4 pt-4 max-w-3xl mx-auto w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 sm:px-0">
             <a
-              href="mailto:balajiramesh.desiger@gmail.com"
+              href="mailto:balajiramesh.designer@gmail.com"
               className="glass rounded-2xl p-4 md:p-5 hover:bg-white/10 transition magnetic text-left h-full"
             >
               <p className="text-xs uppercase tracking-widest text-muted-foreground">
