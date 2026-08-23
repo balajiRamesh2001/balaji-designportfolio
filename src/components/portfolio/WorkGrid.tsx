@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { projects } from "@/data/projects";
+import { ExternalLink } from "lucide-react";
 
 const accentRing: Record<string, string> = {
   electric: "from-primary/40 to-violet/30",
@@ -31,15 +32,15 @@ export function WorkGrid() {
               key={p.slug}
               to="/work/$slug"
               params={{ slug: p.slug }}
-              className={`reveal group relative rounded-3xl overflow-hidden glass p-1 magnetic ${
-                i % 3 === 0 ? "md:col-span-2" : ""
-              }`}
+              className="reveal group relative rounded-3xl overflow-hidden glass p-1 magnetic"
             >
               <div
                 className={`absolute -inset-px rounded-3xl bg-linear-to-br ${accentRing[p.accent]} opacity-0 group-hover:opacity-100 transition duration-500 blur-xl`}
               />
+
               <div className="relative rounded-[22px] overflow-hidden bg-surface/60">
-                <div className="aspect-16/10 overflow-hidden">
+                {/* IMAGE */}
+                <div className="relative aspect-16/10 overflow-hidden">
                   <img
                     src={p.image}
                     alt={`${p.title} preview`}
@@ -48,15 +49,24 @@ export function WorkGrid() {
                     height={1000}
                     className="w-full h-full object-cover transition duration-700 group-hover:scale-[1.04]"
                   />
+
+                  {/* VISIT BUTTON */}
+                  <span className="absolute bottom-4 right-4 flex items-center gap-1 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground opacity-0 transition group-hover:opacity-100">
+                    Visit <ExternalLink size={13} />
+                  </span>
                 </div>
+
+                {/* CONTENT */}
                 <div className="p-6 md:p-8 flex items-end justify-between gap-6 flex-wrap">
                   <div>
                     <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
                       {p.type}
                     </p>
+
                     <h3 className="font-display text-3xl md:text-4xl mt-2 group-hover:text-gradient transition">
                       {p.title}
                     </h3>
+
                     <p
                       className="text-xl md:text-[16px] text-muted-foreground mt-2"
                       style={{ maxWidth: "99%" }}
@@ -64,17 +74,6 @@ export function WorkGrid() {
                       {p.tagline}
                     </p>
                   </div>
-                  {/* <div className="flex items-center gap-2">
-                    {p.metrics.slice(0, 2).map((m) => (
-                      <span key={m.label} className="text-xs px-3 py-1.5 rounded-full glass">
-                        <span className="text-primary font-medium">{m.value}</span>{" "}
-                        <span className="text-muted-foreground">{m.label.toLowerCase()}</span>
-                      </span>
-                    ))}
-                  </div> */}
-                </div>
-                <div className="absolute top-4 right-4 size-10 rounded-full glass flex items-center justify-center transition group-hover:bg-primary group-hover:text-primary-foreground">
-                  <span aria-hidden>↗</span>
                 </div>
               </div>
             </Link>

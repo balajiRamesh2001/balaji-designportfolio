@@ -30,6 +30,46 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "payrupe",
+    title: "Enterprise Fintech App",
+    type: "FINTECH • MOBILE APP REDESIGN • UX IMPROVEMENT",
+    tagline: "A user-centered redesign focused on simplifying financial transactions, improving task efficiency, and enhancing the overall experience for retail agents.",
+    role: "UI/UX Designer",
+    year: "2026",
+    liveUrl: "https://www.rupenet.com/payrupe",
+    secondaryUrl: {
+      label: "Google Play",
+      href: "https://play.google.com/store/apps/details?id=com.solution.rupenetpaymentbox&hl=en_IN",
+    },
+    image: payrupeImg,
+    // beforeAfter: true,
+    accent: "electric",
+    overview:
+      "This project involved redesigning a fintech mobile application used by retail agents to perform digital financial services including BBPS, AEPS, DMT, mobile recharge, and utility payments.As new services were added over time, the application became increasingly complex, making it difficult for agents to quickly access frequently used features. The redesign focused on improving usability, reducing navigation effort, and creating a faster transaction experience for day-to-day financial operations.",
+    problem:
+      "The application had evolved through multiple feature additions without a unified experience strategy. Critical services were distributed across multiple screens and menus, increasing the number of steps required to complete common tasks.Agents frequently switched between features throughout the day, leading to slower transaction completion, increased cognitive load, and reduced operational efficiency.",
+    challenges: [
+      "Simplify navigation across multiple financial services while maintaining familiarity for existing users.",
+      "Improve transaction speed and accessibility for high-frequency agent workflows.",
+      "Build trust and confidence during financial transactions through clearer information hierarchy and transaction visibility.",
+    ],
+    research:
+      "Conducted user interviews and workflow analysis with active retail agents to understand transaction behavior, pain points, and frequently used services. Reviewed transaction journeys across key services including money transfer, bill payments, AEPS, and recharge workflows.Insights were translated into user flows, navigation improvements, and dashboard prioritization strategies.",
+    decisions: [
+      "Redesigned the home dashboard around the most frequently used financial services to reduce navigation effort.",
+      "Introduced a simplified service architecture that groups related transaction types into intuitive categories.",
+      "Enhanced transaction visibility through improved balance presentation, activity tracking, and status indicators.",
+      "Streamlined onboarding and registration flows to reduce friction and improve first-time user experience.",
+    ],
+    learnings:
+      "The redesign demonstrated that efficiency is often more valuable than additional functionality in transaction-heavy financial applications. Agents prioritize speed, familiarity, and clarity when performing daily operations.By simplifying navigation, surfacing high- priority actions, and reducing unnecessary interaction steps, the application became easier to use without disrupting established user habits.",
+    metrics: [
+      { label: "User engagement", value: "+30%" },
+      { label: "Session Efficiency", value: "+20%" },
+      { label: "User friction", value: "−15%" },
+    ],
+  },
+  {
     slug: "collecti",
     title: "Collection Platform",
     type: "SaaS · Web + Mobile",
@@ -139,46 +179,6 @@ export const projects: Project[] = [
       { label: "Inbound leads", value: "+20%" },
       { label: "Average Session Duration", value: "+1m 12s" },
       { label: "Pages Per visit", value: "2.4×" },
-    ],
-  },
-  {
-    slug: "payrupe",
-    title: "Enterprise Fintech App",
-    type: "FINTECH • MOBILE APP REDESIGN • UX IMPROVEMENT",
-    tagline: "A user-centered redesign focused on simplifying financial transactions, improving task efficiency, and enhancing the overall experience for retail agents.",
-    role: "UI/UX Designer",
-    year: "2026",
-    liveUrl: "https://www.rupenet.com/payrupe",
-    secondaryUrl: {
-      label: "Google Play",
-      href: "https://play.google.com/store/apps/details?id=com.solution.rupenetpaymentbox&hl=en_IN",
-    },
-    image: payrupeImg,
-    // beforeAfter: true,
-    accent: "electric",
-    overview:
-      "This project involved redesigning a fintech mobile application used by retail agents to perform digital financial services including BBPS, AEPS, DMT, mobile recharge, and utility payments.As new services were added over time, the application became increasingly complex, making it difficult for agents to quickly access frequently used features. The redesign focused on improving usability, reducing navigation effort, and creating a faster transaction experience for day-to-day financial operations.",
-    problem:
-      "The application had evolved through multiple feature additions without a unified experience strategy. Critical services were distributed across multiple screens and menus, increasing the number of steps required to complete common tasks.Agents frequently switched between features throughout the day, leading to slower transaction completion, increased cognitive load, and reduced operational efficiency.",
-    challenges: [
-      "Simplify navigation across multiple financial services while maintaining familiarity for existing users.",
-      "Improve transaction speed and accessibility for high-frequency agent workflows.",
-      "Build trust and confidence during financial transactions through clearer information hierarchy and transaction visibility.",
-    ],
-    research:
-      "Conducted user interviews and workflow analysis with active retail agents to understand transaction behavior, pain points, and frequently used services. Reviewed transaction journeys across key services including money transfer, bill payments, AEPS, and recharge workflows.Insights were translated into user flows, navigation improvements, and dashboard prioritization strategies.",
-    decisions: [
-      "Redesigned the home dashboard around the most frequently used financial services to reduce navigation effort.",
-      "Introduced a simplified service architecture that groups related transaction types into intuitive categories.",
-      "Enhanced transaction visibility through improved balance presentation, activity tracking, and status indicators.",
-      "Streamlined onboarding and registration flows to reduce friction and improve first-time user experience.",
-    ],
-    learnings:
-      "The redesign demonstrated that efficiency is often more valuable than additional functionality in transaction-heavy financial applications. Agents prioritize speed, familiarity, and clarity when performing daily operations.By simplifying navigation, surfacing high- priority actions, and reducing unnecessary interaction steps, the application became easier to use without disrupting established user habits.",
-    metrics: [
-      { label: "User engagement", value: "+30%" },
-      { label: "Session Efficiency", value: "+20%" },
-      { label: "User friction", value: "−15%" },
     ],
   },
   {
